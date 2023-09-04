@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon ./3-asynchronous-JS/starter/index.js",
-    "natours": "nodemon ./4-natours/app.js"
+    "natours:dev": "nodemon ./4-natours/server.js",
+    "start:prod": "NODE_ENV=production nodemon ./4-natours/server.js"
   },
   "author": "Ricardo Franco",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "morgan": "^1.10.0",
     "slugify": "~1.6.6",
